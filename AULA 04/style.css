@@ -1,0 +1,11 @@
+h1{
+    color: brown;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: verdana, sans-serif;
+}
+p{
+    color: blue;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}

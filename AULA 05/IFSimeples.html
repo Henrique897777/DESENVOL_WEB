@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional Simples</title>
+</head>
+<body>
+    <script language ="javascript">
+        // Objetivo> Ler dois valores independetemente da ordem que forem digitados e apresenta-los em ordem cresente.
+
+        // Definição de variável
+        var js_n1;
+        var js_n2;
+        var js_n3;
+
+        // Entrada de dados
+        js_n1 = parseInt (window.prompt("infomre o valor do primeoro número: ", "00"));
+        js_n2 = parseInt (window.prompt("infomre o valor do primeoro número: ", "00"));
+
+        // Saida de dados sem classificação
+        document.write("Número 1 digitado: ", +js_n1);
+        document.write("<br>Número 2 digitado: ", +js_n2);
+
+        // :Saida de dados com classificação usando condicional simples
+
+        if(js_n1 > js_n2){
+            js_n3 = js_n1;
+            js_n1 = js_n2;
+            js_n2 = js_n3;
+        }
+    
+        document.write("<p><b>Classificação em ordem cresente:<b> " +js_n1+ " e " +js_n2);
+
+
+    </script>
+</body>
+</html>

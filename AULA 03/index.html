@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <fieldset>
+        <center>
+    <fieldset style="width: 50%;">
+    <h3 align="center"><b>Formulário</b></h3>
+    </fieldset>
+      </center>
+      <br>
+    <form action="mailto:gabriel.mpereira@sempreceub.com" method="post" enctype="text/plain">
+        <label for="nome_id">Nome :</label>
+        <input type="text" name="CNome" id="nome_id">
+
+        <label for="mail_id">Email:</label> 
+        <input type="text" name="CMail" id="mail_id"> <br>
+
+        <label for="fone_id">Telefone:</label>
+        <input type="number" name="Cfone" id="fone_id">
+        
+
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>O que você está achando do andamento do curso até agora?</th>
+                    <th>Avalie o curso até agora; agora</th>
+                </tr>
+            </thead>
+            
+                <tr>
+                    <td valign="top">
+                        <label><input type="checkbox" name="andamento" value="muito_bom"> Muito bom, sem comentários</label><br>
+                        <label><input type="checkbox" name="andamento" value="bom"> Bom, sem comentários</label><br>
+                        <label><input type="checkbox" name="andamento" value="muito"> Muito</label><br>
+                        <label><input type="checkbox" name="andamento" value="mais_rapido"> Poderia ir mais rápido</label><br>
+                        <label><input type="checkbox" name="andamento" value="mais_devagar"> Poderia ir mais devagar</label><br>
+                        <label><input type="checkbox" name="andamento" value="outra"> Outra opinião. Qual?</label><br>
+                        <label><input type="checkbox" name="andamento" value="vazio"></label>
+                    </td>
+
+
+                    <td valign="top">
+                        <label><input type="radio" name="avaliacao" value="10++"> 10++</label><br>
+                        <label><input type="radio" name="avaliacao" value="10"> 10</label><br>
+                        <label><input type="radio" name="avaliacao" value="9++"> 9++</label><br>
+                        <label><input type="radio" name="avaliacao" value="8++"> 8++</label><br>
+                        <label><input type="radio" name="avaliacao" value="7++"> 7++</label><br>
+                        <label>
+                            <input type="radio" name="avaliacao" value="outra"> Outra. Qual? 
+                            <input type="text" name="outra_avaliacao_texto">
+                        </label>
+                    </td>
+                </tr>
+        </table>
+        <br>
+        Deixe aqui seus comnentários, e criticas construtivas
+        <textarea name="critica" id="" rows="5" cols="100" placeholder="Digite suas sugestões, dúvidas ou críticas..."></textarea>
+
+        <form action="mailto:gabriel.mpereira@sempreceub.com" method="post">
+            <br>
+
+        <input type="reset" name="Fnome" id="f_id" value="Limpar">
+        <input type="submit" name="Fenviar" id="F_id" value="Enviar Consulta">
+    </form>
+
+    </form>
+    </fieldset>
+    
+    <br>
+    <footer>
+       GABRIEL HENRIQUE MACHADO PEREIRA
+    </footer>
+</body>
+</html>

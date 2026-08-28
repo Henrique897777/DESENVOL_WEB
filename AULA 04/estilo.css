@@ -1,0 +1,37 @@
+/*SELETOR UNIVERSAL*/
+*{
+    margin: 2px;
+    padding: 10px;
+    color:red;
+}
+
+
+/*SELETOR ATRIBUTO*/
+input[type=text]{
+    width: 300px;
+    height:40px;
+}
+/*SELETOR EMAIL*/
+input[type=email]{  
+    width:300px;
+    height:40px;
+}
+
+/*SELETOR BOTÃO*/
+input[type=submit]{
+    width:200px;
+    background-color:green;
+    border:none;
+    cursor:pointer;
+    color:white;
+}
+/*SELETOR CLASSE*/
+.texto-principal{color:brown; text-align:center;}
+.fundo-principal{background-color:aquamarine; padding:20px;}
+
+/*SELETOR ID*/
+#conteudo{
+    background-color:yellow;
+    padding:20px;
+    color:blue;
+}

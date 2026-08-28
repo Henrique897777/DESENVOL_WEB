@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar</title>
+</head>
+<body>
+    <h3>Boas vindas com concatenação de campos</h3>
+
+    <!-- Definição do formulário -->
+     <form action="mailto:gabriel.mpereira@sempreceub.com" name="FormConcatena" method="post">
+     Digite o nome........: <input type="text" name="f_nome">
+     <br>
+     <br>
+     Digite o sobrenome........: <input type="text" name="f_sobrenome">
+     <br>
+     <br>
+     <input type="button" name="btn_Concatena" value="concatena" onclick="concatena()">
+
+     <input type="reset" name="btnCancela" value="cancelar">
+    </form>
+
+    <!-- Criação do código Javascript -->
+     <script type="text/Javascript">
+
+        // <!-- Capturar o nome e sobrenome e formar um nome e sobrenome e formar um nome completo -->
+
+        // <!-- Definição das variáveis  -->
+
+        var js_nome;
+        var js_sobrenome;
+        var js_nomeCompleto;
+
+        function concatena(){
+            // Entrada de dados
+            js_nome = document.FormConcatena.f_nome.value;
+            js_sobrenome = document.FormConcatena.f_sobrenome.value;
+
+            // Processamento de dados
+            js_nomeCompleto = js_nome+ ' ' +js_sobrenome;
+
+            // Saida de dados
+            window.alert("OLÁ " +js_nomeCompleto);
+            
+        }
+
+
+     </script>
+</body>
+</html>
