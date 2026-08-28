@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h2><b>ESCOLHA SEU PAIS NA CAIXA</b></h2>
+    <p>Ao escolher o país na caixa haverá uma mensagem de retorno com o método concatenar</p>
+    
+    <form action="" name="formPais"  method="post">
+    <select name="pais" id="p_id">
+      <option value="BRASIL">BRASIL</option>
+      <option value="USA">USA</option>
+      <option value="CANADA">CANADA</option>
+      <option value="ESPANHA">ESPANHA</option>
+      <option value="FRANÇA">FRANÇA</option>
+    </select>
+    </form>
+
+    <hr>
+    <h2>INSIRA SUES DADOS CADASTRAIS</H2>
+
+    <form action="" name="DadosCadastrais"  method="post"> 
+        Nome:<input type="text" name="f_nome"> <br> <br>
+        Sobrenome: <input type="text" name="f_sobre"> <br> <br>
+        idade: <input type="number" name="f_idade" min="1"> <br> <br>
+        data de nascimento: <input type="date" name="f_data"> <br> <br>
+        <input type="button" name="btn_Concatena" value="CONCATENA INFORMAÇÕES" onclick="concatena()"> 
+        <input type="reset" name="btnCancela" value="LIMPAR"> 
+        
+    </form>
+
+    <hr>
+    <br>
+    <script type="text/javascript">
+        
+        var js_nome;
+        var js_sobrenome;
+        var js_idade;
+        var js_data;
+        var js_nomeCompleto;
+        var js_pais;
+
+        function concatena(){
+
+            js_nome = document.DadosCadastrais.f_nome.value;
+            js_sobrenome = document.DadosCadastrais.f_sobre.value;
+            js_idade = document.DadosCadastrais.f_idade.value;
+            js_data = document.DadosCadastrais.f_data.value;
+            js_pais = document.formPais.pais.value;
+
+            js_nomeCompleto = js_nome+ " " +js_sobrenome;
+
+            if (js_idade > 2){
+            window.alert("Bem vindo " +js_nomeCompleto+ "\nSeu país é " +js_pais+ " e você tem " +js_idade+ " ano");
+
+            }else{
+            window.alert("Bem vindo " +js_nomeCompleto+ "\nSeu país é " +js_pais+ " e você tem " +js_idade+ " anos");
+
+            }
+            
+
+        }
+
+
+    </script>
+      
+    
+
+</body>
+</html>
