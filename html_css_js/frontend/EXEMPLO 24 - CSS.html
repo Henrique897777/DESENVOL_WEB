@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO 24 - CSS</title>
+    <style>
+        body{
+            margin: 50px;
+        }
+        div{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1em;
+            text-align: justify;
+        }
+        .div1{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            margin: 20px;
+            padding: 20px;
+            border-left: solid green 8px;
+        }
+        .div2{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            margin: 20px;
+            padding: 20px;
+            border-left: solid red 8px;
+        }
+        .div3{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            margin: 20px;
+            padding: 20px;
+            border-left: solid blue 8px;
+        }
+        .block{
+            display: block;
+            background-color: lightgreen;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            padding: 20px;
+        }
+        .inline{
+            display: inline;
+            background-color: lightpink;
+            margin-right: 15px;
+            padding: 20px;
+            width: 1000px;
+            height: 2000px;
+        }
+        .inlineblock{
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            background-color: lightblue;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Exemplo 24 CSS - Introdução à Propriedade CSS Display</h1>
+        <div class="div1">
+            <h2>O que é a Propriedade Display?</h2>
+            <p>A propriedade <code>display</code> no CSS especifica o comportamento de renderização de um elemento, ou seja, como ele é exibido na página e como interage com os elementos ao seu redor.</p>
+        </div>
+        <div class="div2">
+            <h2>Principais Valores de Display</h2>
+            <ul>
+                <li><strong>block</strong>: O elemento é exibido como um bloco, ocupando toda a largura disponível e iniciando em uma nova linha.</li>
+                <li><strong>inline</strong>: O elemento é exibido na mesma linha, ocupando apenas o espaço necessário para seu conteúdo, sem iniciar uma nova linha.</li>
+                <li><strong>inline-block</strong>: Combina características dos dois anteriores; o elemento é exibido na mesma linha, mas permite definir largura e altura.</li>
+                <li><strong>flex</strong>: Define o elemento como um contêiner flexível, permitindo um layout mais dinâmico dos elementos filhos.</li>
+                <li><strong>grid</strong>: Define o elemento como um contêiner de grade, facilitando a criação de layouts bidimensionais complexos.</li>
+                <li><strong>none</strong>: O elemento não é exibido na página e não ocupa espaço.</li>
+            </ul>
+        </div>
+        <div class="div3">
+            <div>
+                <h2>Display: block</h2>
+                <p>
+                    Display: block: O elemento div com a classe .block é exibido como um bloco, iniciando em uma nova linha e ocupando toda a largura disponível. A cor de fundo azul claro e a margem inferior de 10 pixels ajudam a visualizar sua extensão.
+                </p>
+
+            </div>
+            <div>
+                <h2>Display: inline</h2>
+                Display: inline: Os elementos com a classe .inline são exibidos na mesma linha, um ao lado do outro, ocupando apenas o espaço necessário para seu conteúdo. A cor de fundo verde claro e a margem direita de 10 pixels destacam cada elemento.
+
+            </div>
+            <div>
+                <h2>Display: inline-block</h2>
+                Display: inline-block: Os elementos <div> com a classe .inline-block são exibidos na mesma linha, mas permitem a definição de largura (150 pixels) e altura (50 pixels). A cor de fundo coral claro, a margem de 5 pixels e o texto centralizado facilitam a visualização de suas dimensões.
+
+            </div>
+        </div>
+        <div>
+            <h2>Exemplos Práticos</h2>
+            <div>
+                <h3>Display block</h3>
+                <p>Este elemento usa o display block e ocupa uma linha inteira. <span class="block">Exemplo 1</span> <span class="block">Exemplo 2</span></p>
+            </div>
+            <div>
+                <h3>Display inline</h3>
+                <p class="inline">
+                    Elementos com display inline não iniciam uma nova linha e ocupam apenas a largura necessária.
+                </p>
+                <span class="inline"> Elemento inline 1</span>
+                <span class="inline"> Elemento inline 2</span>
+            </div>
+            <div>
+                <h3>Display inline-block</h3>
+                <p class="inlineblock">
+                    Elementos com display inline block não inciam um nova linha e ocupam apenas a largura necessária para seu contepudo, porém permitem a definição de largura e altura..
+                </p>
+                <span class="inlineblock"> Elemento inline 1</span>
+                <span class="inlineblock"> Elemento inline 2</span>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 38 - Bootstrap</title>
+    <style>
+        .painel {
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="card mt-4 painel">
+            <div class="card-header bg-primary text-white">
+                Funcionários
+            </div>
+            <div class="card-body">
+                <div class="text-end">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Novo Funcionário
+                    </button>
+                </div>
+                <div class="mt-3">
+                    <h4>Funcionários Cadastrados</h4>
+                    <table class="table table-hover table-bordered border-dark">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th scope="col">CPF</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Salário</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>555.555.555-99</td>
+                                <td>LARA MARIA </td>
+                                <td>lara@gmal.com</td>
+                                <td>R$30.000,00</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>555.555.555-99</td>
+                                <td>LARA MARIA </td>
+                                <td>lara@gmal.com</td>
+                                <td>R$30.000,00</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>555.555.555-99</td>
+                                <td>LARA MARIA </td>
+                                <td>lara@gmal.com</td>
+                                <td>R$30.000,00</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>555.555.555-99</td>
+                                <td>LARA MARIA </td>
+                                <td>lara@gmal.com</td>
+                                <td>R$30.000,00
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>555.555.555-99</td>
+                                <td>LARA MARIA </td>
+                                <td>lara@gmal.com</td>
+                                <td>R$30.000,00</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>555.555.555-99</td>
+                                <td>LARA MARIA </td>
+                                <td>lara@gmal.com</td>
+                                <td>R$30.000,00</td>
+                                <td>
+                                    <div>
+                                        <button type="button" class="btn btn-primary">Editar</button>
+                                        <button type="button" class="btn btn-danger">Excluir</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white" >
+                    <label for="">Funcionários</label>
+                    <button type="button" class="btn-close text-white"  data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label for="">Nome</label>
+                        <input type="text" name="" id="" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="">CPF</label>
+                            <input type="text" name="" id="" class="form-control">
+                        </div>
+                        <div class="col-8">
+                            <label for="">E-mail</label>
+                            <input type="text" name="" id="" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="">Cargo</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Selecione um cargo</option>
+                                <option value="1">Front-end</option>
+                                <option value="2">Back-end</option>
+                                <option value="3">FullStack</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label for="">Salário</label>
+                            <input type="numeber" name="" id="" class="form-control" placeholder="R$ 30.000,00">
+                        </div>
+                        <div class="col-3">
+                            <label for="">Data Admissão</label>
+                            <input type="date" name="" id="" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primiry" data-bs-dismiss="modal">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>

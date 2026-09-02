@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exercicio 47 JavaScript Vetores</title>
+</head>
+
+<body>
+    <div class="container-sm">
+        <h1>Exemplo 5 - Vetores</h1>
+        <div class="alert alert-info" role="alert">
+            <div>
+                <p>Seja o vetor 1 : (1, "a", "Jose", 2.2)</p>
+                <p>O vetor2 : ("casa", "apartamento", "fazenda")</p>
+                <p>O vetor 3 : (10, 20, 30, 90, 100)</p>
+                <p>Usamos o método Concat para concatenar dois ou mais vetores a um vetor de inicio.</p>
+                <p>Nete exemplo usamos o Concat para concatenar o vetor1, os vetores 3 e 2. Como resultado temos um
+                    novo
+                    vetor, que é descrito abaixo.</p>
+            </div>
+        </div>
+        <script>
+            var vetor1 = new Array(1,"a", "Jose", 2.2);
+            var vetor2 = new Array("casa", "apartamento", "fazenda");
+            var vetor3 = new Array(10, 20, 30, 90, 100);
+            var resultado = vetor1.concat(vetor3, vetor2);
+            document.writeln(`O vetor resultante após a concatenação é ${resultado}</h4>`)
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </div>
+</body>
+
+</html>

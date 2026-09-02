@@ -1,0 +1,59 @@
+\<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 43 - JavaScript</title>
+</head>
+
+<body>
+    <div class="container-md pt-4">
+        <h1>Exemplo 1 - JavaScript</h1>
+        <h2>Cálculo de Área de Triângulo</h2>
+
+        <div class="form-group">
+            <label for="text">Informe a base do triângulo</label>
+            <input type="text" class="form-control" name="txtBaseTriangulo" id="txtBaseTriangulo" >
+        </div>
+        <div class="form-group">
+            <label for="text">Informe a altura do triângulo</label>
+            <input type="" class="form-control" name="txtAlturaTriangulo" id="txtAlturaTriangulo" >
+        </div>
+        <div class="form-group pt-4">
+            <button type="button" class="btn btn-success form-control" onclick="calcularAreaTriangulo()">Calcular Área do Triângulo</button>
+        </div>
+        <div class="form-group pt-4">
+            <p id = "resultado">
+
+            </p>
+        </div>
+
+    </div>
+    
+    
+    <script>
+        function calcularAreaTriangulo(){
+            var base=document.getElementById("txtBaseTriangulo").value;
+            var altura = document.getElementById("txtAlturaTriangulo").value;
+            var areaTriangulo = (base*altura)/2;
+            document.getElementById("resultado").innerHTML="A área do triângulo é "+areaTriangulo;
+            window.alert("Area do triangulo é: "+ areaTriangulo);
+            console.log("Area do triangulo é: " +areaTriangulo);
+            if(areaTriangulo>20){
+                let areaMaior = "Esta area é maior que 20";
+                window.alert("Uso do let "+areaMaior);
+            }
+            window.alert("Uso do let froa do bloco if" +areaMaior);
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>EXEMPLO 37 - Bootstrap</title>
+    <style>
+        .painel {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            font-weight: bold;
+            border-top: solid darkorange 6px;
+            padding: 25px;
+            margin: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="painel">
+            <div>
+                <label for="">Nome</label>
+                <input type="text" name="" id="" class="form-control">
+            </div>
+            <div>
+                <label for="">Data de Nascimento</label>
+                <input type="date" name="" id="" class="form-control">
+            </div>
+            <div>
+                <label for="">Selecione um Estado civil</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Estado Civil</option>
+                    <option value="1">Casado</option>
+                    <option value="2">Solteiro</option>
+                    <option value="3">Outros</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Selecione uma Preferência</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Cinema
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Praia
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Outros
+                    </label>
+                </div>
+            </div>
+            <table class="table table-hover table-bordered">
+                <thead class="bg-info">
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jose da Silva</td>
+                        <td>QNL 09 BLOCO G</td>
+                        <td>61 9777-0077</td>
+                        <td>joselegal@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Maria da silva</td>
+                        <td>nucleo bandeirante</td>
+                        <td>61 7777-475</td>
+                        <td>maria@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Werneck da silva</td>
+                        <td>QNL 09 BLOCO G</td>
+                        <td>61 9777-0077</td>
+                        <td>werneckegal@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriel da silva</td>
+                        <td>QNL 09 BLOCO G</td>
+                        <td>61 9777-0077</td>
+                        <td>gabriellegal@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Enzo da silva</td>
+                        <td>QNL 09 BLOCO G</td>
+                        <td>61 9777-0077</td>
+                        <td>enzolegal@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Eduardo da silva</td>
+                        <td>QNL 09 BLOCO G</td>
+                        <td>61 9777-0077</td>
+                        <td>edualegal@gmail.com</td>
+                    </tr>
+                </tbody>
+        </table>
+        <div>
+            <div class="d_grid gap 2">
+                <button class="btn btn-info" type="button">Salvar</button>
+                <button class="btn btn-info" type="button">Sair</button>
+
+            </div>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

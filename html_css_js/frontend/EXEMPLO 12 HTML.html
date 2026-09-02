@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXEMPLO 12 HTML</title>
+  </head>
+  <body>
+    <h1>Exemplo 12 - Formulários e tabelas</h1>
+    <form action="PaginaDestino.java" method="get">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+          <label for="">Digite o seu CPF</label> <br />
+          <input type="text" name="txtCPF" id="txtCPF" />
+        </div>
+        <br />
+        <div>
+          <label for="">Digite o seu Nome</label> <br />
+          <input type="text" name="txtNome" id="txtNome" />
+        </div>
+        <br />
+        <div>
+          <label for="">Digite a data de nascimento</label> <br />
+          <input type="date" name="txtDataNascimento" id="txtDataNascimento" />
+        </div>
+        <br />
+        <div>
+          <label for="">Estado Civil</label>
+          <select name="CboEstadoCivil" id="Cbo">
+            <option value="1">Casado</option>
+            <option value="2">Solteiro</option>
+            <option value="3">Divorciado(a)</option>
+            <option value="4">Viúvo</option>
+            <option value="5">Tico-Tico no Fubá</option>
+            <option value="6">Outros</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="">Sexo</label>
+          <input type="radio" name="rdSexo" id="rdSexo" value="1" /> Femenino
+          <input type="radio" name="rdSexo" id="rdSexo" value="2" /> Masculino
+        </div>
+        <div>
+          <button type="submit">Cadastrar</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Dados Cadastrados</legend>
+        <table border="1">
+          <tr>
+            <th>CPF</th>
+            <th>Nome</th>
+            <th>Sexo</th>
+          </tr>
+          <tr>
+            <td>333.333.333-55</td>
+            <td>Werneck</td>
+            <td>Feminino</td>
+          </tr>
+          <tr>
+            <td>333.333.333-55</td>
+            <td>Werneck</td>
+            <td>Feminino</td>
+          </tr>
+          <tr>
+            <td>333.333.333-55</td>
+            <td>Werneck</td>
+            <td>Feminino</td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+<h2>TESTE FORMULARIOS</h2>
+<form action="Formulario.php" method="get">
+  <fieldset>
+    <legend>TESTE DE FORMULARIO</legend>
+
+    <div>
+      <label for="">Nome</label> <br />
+      <input type="text" name="txtNome" id="txtNome" /><br />
+      <label for="">DATA</label><br />
+      <input type="date" name="txtDATA" id="txtDATA" /><br />
+      <label for="">hobbies</label><br />
+      <select name="hobbies" id="hh">
+        <br />
+        <option value="1">sexo</option>
+        <br />
+        <option value="2">videogame</option>
+        <br />
+        <option value="3">filmes</option>
+        <br />
+      </select>
+      <label for="">Genero</label><br />
+      <input type="radio" name="txtGenero" id="txt" value="1" /> masculino
+      <input type="radio" name="txtGenero" id="txt" value="2" /> feminino<br />
+      <table border="3">
+        <br />
+        <tr>
+          <th>lucas</th>
+          <th>joao</th>
+          <th>pedro</th>
+        </tr>
+        <tr>
+          <td>123</td>
+          <td>456</td>
+          <td>678</td>
+        </tr>
+      </table>
+      <br />
+
+      <button type="submit">CADASTRAR TUDO</button>
+    </div>
+  </fieldset>
+</form>

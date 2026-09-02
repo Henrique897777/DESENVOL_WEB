@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO 27 FLEXBOX</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .navigation{
+            flex-flow: row wrap;
+            flex-direction: flex;
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            background-color: black;
+            font-size: 1.3rem;
+            margin: 0;
+        }
+        .navigation a{
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: gold;
+        }
+        .navigation a:hover{
+           background-color: gold;
+           color: black;
+           font-weight: 900;
+        }
+        @media all and (max-width:800px){
+            .navigation{
+                justify-content: center;
+            }
+        }
+            @media all and (max-width:600px){
+                .navigation{
+                    flex-flow: column-reverse;
+                    padding: 0;
+                }
+                .navigation a{
+                    text-align: center;
+                    padding: 10px;
+                    border-top: solid rgba(213, 160, 26, 0.6) 1px;
+                    border-bottom: solid rgba(213, 160, 26, 0.2) 1px;;
+                }
+                .navigation li:last-of-type a{
+                    border-bottom: none;
+                    
+                }
+            }
+    </style>
+
+</head>
+
+<body>
+    <ul class ="navigation">
+        <li><a href="http://">Inicio</a></li>
+        <li><a href="">Produto</a></li>
+        <li><a href="">Contato</a></li>
+        <li><a href="">Sobre</a></li>
+    </ul>
+</body>
+
+</html>

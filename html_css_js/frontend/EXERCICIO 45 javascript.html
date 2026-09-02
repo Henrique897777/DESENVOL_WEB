@@ -1,0 +1,71 @@
+\<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 43 - JavaScript</title>
+</head>
+
+<body>
+    <div class="container-md pt-4">
+        <h1>Exemplo 1 - JavaScript</h1>
+        <h2>Cálculo de IMC</h2>
+
+        <div class="form-group">
+            <label for="text">Informe a sau altura</label>
+            <input type="number" class="form-control" name="Altura" id="txtAltura" >
+
+        </div>
+        <div class="form-group">
+            <label for="text">Informe o seu peso</label>
+            <input type="number" class="form-control" name="txtPeso" id="txtPeso" >
+        </div>
+        <div class="form-group pt-4">
+            <button type="button" class="btn btn-success form-control" onclick="calcularAreaTriangulo()">Calcular o IMC</button>
+        </div>
+        <div class="form-group pt-4">
+            <p id = "resultado">
+
+            </p>
+        </div>
+
+    </div>
+    
+    
+    <script>
+        function calcularAreaTriangulo(){
+            var peso=document.getElementById("txtPeso").value;
+            var altura = document.getElementById("txtAltura").value;
+            var IMC = peso/(altura*altura);
+            var classificacaoIMC = "";
+            document.getElementById("resultado").innerHTML="O seu IMC é:  "+ IMC;
+            window.alert("O IMC é: "+ IMC);
+            console.log("O IMC é: " + IMC);
+            if(IMC<18.5){
+                classificacaoIMC="Abaixo do peso!"
+            }
+
+            else if(IMC>18.5 && IMC<=24.9){
+                classificacaoIMC="peso normal!"
+            }
+            else if(IMC>24.9 && IMC<=29.9){
+                classificacaoIMC="Acima do peso!"
+            }
+            else{
+                classificacaoIMC="Obeso"
+            }
+            document.getElementById("resultado").innerHTML=`<p> IMC = ${IMC}</p <p> Classificação do IMC = ${classificacaoIMC} </p`
+        
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

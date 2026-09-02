@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Exercicio 48 JavaScript</title>
+</head>
+<body>
+<div class="container-sm">
+    <div class="alert alert-warning" role="alert">
+        <h1>Uso dos métodos (Push, pop, sort, lastIndexOf e IndexOf)</h1>
+        <ul>
+            <li>
+                <strong>push(elemento)</strong>
+                <br>
+                Adiciona um ou mais elementos ao <u>final</u> do array. É um método mutável (altera o array
+                original).
+                <br>
+                <em>Retorno:</em> O novo tamanho (comprimento) do array.
+                <br>
+                Exemplo: <code>arr.push('novo item');</code>
+            </li>
+
+            <li>
+                <strong>pop()</strong>
+                <br>
+                Remove o <u>último</u> elemento do array. Também altera o array original.
+                <br>
+                <em>Retorno:</em> O elemento que foi removido.
+                <br>
+                Exemplo: <code>let removido = arr.pop();</code>
+            </li>
+
+            <li>
+                <strong>sort()</strong>
+                <br>
+                Ordena os elementos do array localmente e retorna o array ordenado.
+                <br>
+                <em>Atenção:</em> O padrão é a ordenação alfabética (strings). Para ordenar números corretamente, é
+                necessário passar uma função de comparação.
+                <br>
+                Exemplo: <code>arr.sort((a, b) => a - b);</code> (Ordenação numérica crescente)
+            </li>
+
+            <li>
+                <strong>indexOf(elemento)</strong>
+                <br>
+                Retorna o <u>primeiro</u> índice em que o elemento pode ser encontrado no array.
+                <br>
+                <em>Retorno:</em> O número do índice (ex: 0, 1, 2...) ou <code>-1</code> se o elemento não existir.
+                <br>
+                Exemplo: <code>let posicao = arr.indexOf('item');</code>
+            </li>
+
+            <li>
+                <strong>lastIndexOf(elemento)</strong>
+                <br>
+                Retorna o <u>último</u> índice em que um elemento pode ser encontrado no array (faz a busca de trás
+                para frente).
+                <br>
+                <em>Retorno:</em> O número do índice ou <code>-1</code> se não encontrado. Útil quando há valores
+                duplicados no array.
+                <br>
+                Exemplo: <code>let ultimaPosicao = arr.lastIndexOf('item');</code>
+            </li>
+        </ul>
+    </div>
+    <div class="container-sm">
+        <div class="alert alert-success" role="alert">
+            <h2>Exemplo de uso dos métodos destacados acima.</h2>
+            <script>
+                var vetor1=[];
+                
+            </script>
+        </div>
+        
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

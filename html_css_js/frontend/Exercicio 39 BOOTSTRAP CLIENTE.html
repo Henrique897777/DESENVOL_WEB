@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Exemplo 39 - Bootstrap</title>
+    <style>
+      .painel {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+          rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-sm">
+      <div class="card mt-4 painel">
+        <div class="card-header bg-dark text-white">CLIENTES</div>
+        <div class="card-body">
+          <div class="text-end">
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              NOVO CLIENTE
+            </button>
+          </div>
+          <div class="mt-3">
+            <h4>CLIENTES CADASTRADOS</h4>
+            <table class="table table-hover table-bordered border-dark">
+              <thead class="bg-dark text-white">
+                <tr>
+                  <th scope="col">CPF</th>
+                  <th scope="col">NOME</th>
+                  <th scope="col">E-mail</th>
+                  <th scope="col">TELEFONE</th>
+                  <th scope="col">ENDEREÇO</th>
+                  <th scope="col">AÇÕES</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>555.555.555-99</td>
+                  <td>Lucas Pereira</td>
+                  <td>lucas@gmal.com</td>
+                  <td>61 8888-7847</td>
+                  <td>lucas@gmal.com</td>
+                  <td>
+                    <div>
+                      <button type="button" class="btn btn-dark">
+                        ADICIONAR
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        EXCLUIR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        ALTERAR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                      <button type="button" class="btn btn-dark">LISTA</button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>555.555.555-99</td>
+                  <td>Lucas Pereira</td>
+                  <td>lucas@gmal.com</td>
+                  <td>61 8888-7847</td>
+                  <td>lucas@gmal.com</td>
+                  <td>
+                    <div>
+                      <button type="button" class="btn btn-dark">
+                        ADICIONAR
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        EXCLUIR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        ALTERAR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                      <button type="button" class="btn btn-dark">LISTA</button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>555.555.555-99</td>
+                  <td>Lucas Pereira</td>
+                  <td>lucas@gmal.com</td>
+                  <td>61 8888-7847</td>
+                  <td>lucas@gmal.com</td>
+                  <td>
+                    <div>
+                      <button type="button" class="btn btn-dark">
+                        ADICIONAR
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        EXCLUIR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        ALTERAR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                      <button type="button" class="btn btn-dark">LISTA</button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>555.555.555-99</td>
+                  <td>Lucas Pereira</td>
+                  <td>lucas@gmal.com</td>
+                  <td>61 8888-7847</td>
+                  <td>lucas@gmal.com</td>
+                  <td>
+                    <div>
+                      <button type="button" class="btn btn-dark">
+                        ADICIONAR
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        EXCLUIR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        ALTERAR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                      <button type="button" class="btn btn-dark">LISTA</button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>555.555.555-99</td>
+                  <td>Lucas Pereira</td>
+                  <td>lucas@gmal.com</td>
+                  <td>61 8888-7847</td>
+                  <td>lucas@gmal.com</td>
+                  <td>
+                    <div>
+                      <button type="button" class="btn btn-dark">
+                        ADICIONAR
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        EXCLUIR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        ALTERAR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                      <button type="button" class="btn btn-dark">LISTA</button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>555.555.555-99</td>
+                  <td>Lucas Pereira</td>
+                  <td>lucas@gmal.com</td>
+                  <td>61 8888-7847</td>
+                  <td>lucas@gmal.com</td>
+                  <td>
+                    <div>
+                      <button type="button" class="btn btn-dark">
+                        ADICIONAR
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        EXCLUIR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        ALTERAR
+                      </button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                      <button type="button" class="btn btn-dark">LISTA</button>
+                      <button type="button" class="btn btn-dark">
+                        PESQUISAR
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <label for="">Cliente</label>
+            <button
+              type="button"
+              class="btn-close text-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="col-8">
+              <label for="">Nome</label>
+              <input type="text" name="" id="" class="form-control" />
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <label for="">CPF</label>
+                <input type="text" name="" id="" class="form-control" />
+              </div>
+              <div class="col-8">
+                <label for="">E-mail</label>
+                <input type="text" name="" id="" class="form-control" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="">Telefone</label>
+                <input
+                  type="tel"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="(00) 0000-0000"
+                />
+              </div>
+              <div class="col-8">
+                <label for="">Endereço</label>
+                <input type="text" name="" id="" class="form-control" />
+              </div>
+              <div class="col-3">
+                <label for="">Data de aniversário</label>
+                <input type="date" name="" id="" class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-bs-dismiss="modal"
+            >
+              Salvar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

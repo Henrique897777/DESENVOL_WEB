@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO 26 FLEXBOX</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 1.6;
+        }
+        .container{
+            display: flex;
+            min-height: 150px;
+            width: 80%;
+            margin: 20px auto;
+            padding: 12px;
+            background-color: cyan;
+
+        }
+        .item{
+            background-color: lightpink;
+            padding: 20px;
+            margin: 10px;
+            border: solid black 4px;
+            text-align: center;
+            flex-basis: 100px;
+            flex-grow: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .star{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .strecth{
+            align-items: stretch;
+        }
+        .baseline .item-1{
+            font-size: 1.6em;
+            padding-top: 10px;
+        }
+        .baseline .item-2{
+            font-size: 1em;
+            padding-top: 25px;
+        }
+        .baseline .item-3{
+            font-size: 2.2em;
+           
+        }
+        .div1{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-left: solid red 5px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo 26 - CSS FlexBox Align Items</h1>
+    <div class="div1">
+        <h2>Align-Items</h2>
+        <p>A propriedade <strong>align-items</strong> define como os itens flex são alinhados ao longo do eixo transversal (cross-axis) do container. Neste exemplo(com flex-direction:row), o eixo transversal é o vertical</p>
+    </div>
+    <h2>Align-Items: Center(Centro Vertical)</h2>
+    <div class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <h2>Align-Items: Flex - Start(Topo)</h2>
+    <div class="container Start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <h2>Align-Items: Flex-end(Base)</h2>
+    <div class="container end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <h2>Align-Items: Baseline(linha da base do texto)</h2>
+    <div class="container baseline">
+        <div class="item item-1">Item 1</div>
+        <div class="item item-2">Item 2</div>
+        <div class="item item-3">Item 3</div>
+    </div>
+    <h2>Align-Items: strecth(padrão esticado)</h2>
+    <div class="container strecth">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>

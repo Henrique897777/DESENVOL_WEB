@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 40 - Bootstrap</title>
+    <style>
+        .painel {
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="card mt-4 painel">
+            <div class="card-header bg-dark text-white">
+                PEDIDOS
+            </div>
+            <div class="card-body">
+                <div class="text-end">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        NOVOS PEDIDOS
+                    </button>
+                </div>
+                <div class="mt-3">
+                    <h4>PEDIDOS CADASTRADOS</h4>
+                        <table class="table table-hover table-bordered border-dark">
+                            <thead class="bg-dark text-white">
+                                <tr>
+                                    <th scope="col">DATA PEDIDO</th>
+                                    <th scope="col">FUNCIONARIO ID</th>
+                                    <th scope="col">PEDIDO ID</th>
+                                    <th scope="col">CLIENTE ID</th>
+                                    <th scope="col">VALOR TOTAL</th>
+                                    <th scope="col">AÇÕES</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20/06/2025</td>
+                                    <td>2222222222 </td>
+                                    <td>5555555555</td>
+                                    <td>9999999999</td>
+                                    <td>R$ 60</td>
+                                    <td>
+                                        <div>
+                                            <button type="button" class="btn btn-dark">registrar venda</button>
+                                            <button type="button" class="btn btn-dark">listar venda</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>20/06/2025</td>
+                                    <td>2222222222 </td>
+                                    <td>5555555555</td>
+                                    <td>9999999999</td>
+                                    <td>R$ 60</td>
+                                    <td>
+                                        <div>
+                                            <button type="button" class="btn btn-dark">registrar venda</button>
+                                            <button type="button" class="btn btn-dark">listar venda</button>
+                                        </div>
+                                    </td>
+                                <tr>
+                                    <td>20/06/2025</td>
+                                    <td>2222222222 </td>
+                                    <td>5555555555</td>
+                                    <td>9999999999</td>
+                                    <td>R$ 60</td>
+                                    <td>
+                                        <div>
+                                            <button type="button" class="btn btn-dark">registrar venda</button>
+                                            <button type="button" class="btn btn-dark">listar venda</button>
+                                        </div>
+                                    </td>
+                                <tr>
+                                    <td>20/06/2025</td>
+                                    <td>2222222222 </td>
+                                    <td>5555555555</td>
+                                    <td>9999999999</td>
+                                    <td>R$ 60</td>
+                                    <td>
+                                        <div>
+                                            <button type="button" class="btn btn-dark">registrar venda</button>
+                                            <button type="button" class="btn btn-dark">listar venda</button>
+                                        </div>
+                                    </td>
+                                <tr>
+                                    <td>20/06/2025</td>
+                                    <td>2222222222 </td>
+                                    <td>5555555555</td>
+                                    <td>9999999999</td>
+                                    <td>R$ 60</td>
+                                    <td>
+                                        <div>
+                                            <button type="button" class="btn btn-dark">registrar venda</button>
+                                            <button type="button" class="btn btn-dark">listar venda</button>
+                                        </div>
+                                    </td>
+                                <tr>
+                                    <td>20/06/2025</td>
+                                    <td>2222222222 </td>
+                                    <td>5555555555</td>
+                                    <td>9999999999</td>
+                                    <td>R$ 60</td>
+                                    <td>
+                                        <div>
+                                            <button type="button" class="btn btn-dark">registrar venda</button>
+                                            <button type="button" class="btn btn-dark">listar venda</button>
+                                        </div>
+                                    </td>
+
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <label for="">PEDIDOS</label>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-4">
+                        <label for="">DATA PEDIDO</label>
+                        <input type="date" name="" id="" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="">FUNCIONARIO ID</label>
+                            <input type="number" name="" id="" class="form-control" placeholder=" 0000000000">
+                        </div>
+                        <div class="col-6">
+                            <label for="">PEDIDO ID</label>
+                            <input type="number" name="" id="" class="form-control" placeholder=" 0000000000">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="">CLIENTE ID</label>
+                            <input type="number" name="" id="" class="form-control" placeholder=" 0000000000">
+                        </div>
+                        <div class="col-4">
+                            <label for="">VALOR TOTAL</label>
+                            <input type="number" name="" id="" class="form-control" placeholder="R$00.00">
+                        </div>
+                        
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
