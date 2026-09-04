@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Do_While</title>
+</head>
+<body>
+    <script lang="javascript">
+        // EXECUTAR UMA QUANTIDADE DE COMANDOS  POR UMA QUANTIDADE INDETERMIDADA DE VEZES  UTILIZANDO UMA VARIÁVEL COM CONTROLE
+
+        let js_contador=1;
+        let js_resposta=true;
+
+        // APLICAÇÃO DO WHILE
+
+        do{
+            document.write('<p>' +js_contador+ ' Repetição de una unica linha de comando dentro de um laço de repetição');
+                js_contador +=1;
+                js_resposta= window.confirm('Deseja continuar ?');
+
+        }
+        while (js_resposta ==true);
+
+    </script>
+</body>
+</html>
