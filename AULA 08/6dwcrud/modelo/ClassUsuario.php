@@ -3,7 +3,7 @@ class ClassUsuario
 {
     private $idUsuario;
     private $nome;
-    $private $email;
+    private $email;
 
     function getIdUsuario()
     {
@@ -24,7 +24,7 @@ class ClassUsuario
     {
         $this->idUsuario = $idUsuario;
     }
-    function setNiome($nome)
+    function setNome($nome)
     {
         $this->nome = $nome;
     }

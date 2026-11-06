@@ -1,23 +1,15 @@
 <?php
-class Conexao 
-
+class Conexao
 {
-
     public static function getInstance()
     {
-        $dsn = 'mysql:host=localhost;dbname=db_php';
+        $dsn = 'mysql:host=127.0.0.1;port=3307;dbname=bdphp;charset=utf8mb4';
         $user = 'root';
         $password = '';
-        try{
-            $pdo = new PDO($dsn, $user, $password);
-            $pdo-> setATTribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $pdo;
-            
-        }catch (PDOException $exc){
-            echo $exc->getMessage();
-        }
+
+        $pdo = new PDO($dsn, $user, $password);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $pdo;
     }
-
 }
-
 
